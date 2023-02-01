@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <style>
+      *, *:after, *:before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      p {
+        display: inline-block;
+        width: 25%;
+        text-align: center;
+        border: 2px solid #395596;
+        font-weight: 500 ;
+        padding: 25px;
+    }
+
+    </style>
+  </head>
+
+  <!-- Varibales -->
+
+  <body>
+    <div style="margin: auto; gap: 25px; width: 400px; height: 780px">
+      <h2 style="text-align: center">Your Verification Code is:</h2>
+      <div
+        style="
+          margin-top: 10px;
+          position: relative;
+          background-color: #8affcf;
+          left: 0;
+          right: 0;
+          margin: auto;
+          margin-top: 20px;
+        "
+      >
+        <p style="font-size: 18px"><%= passcode[0] %></p><p style="font-size: 18px ;"><%= passcode[1] %></p><p style="font-size: 18px"><%= passcode[2] %></p><p style="font-size: 18px"><%= passcode[3] %></p>
+      </div>
+    </div>
+  </body>
+</html>

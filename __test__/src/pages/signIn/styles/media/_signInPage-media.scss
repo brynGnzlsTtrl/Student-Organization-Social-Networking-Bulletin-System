@@ -1,0 +1,356 @@
+.log-in-form {
+  @include min-media(tablet) {
+    &__sign-in {
+      height: 535px;
+      width: 400px;
+      background: linear-gradient(
+        164.21deg,
+        rgba(255, 255, 255, 0.4) 3.03%,
+        rgba(255, 255, 255, 0.1) 95.86%
+      );
+      border-radius: 30px;
+      box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(10px);
+
+      h1 {
+        text-align: initial;
+        margin-bottom: 25px;
+      }
+    }
+    &__ellipse_bg-1 {
+      left: calc(150px + (50vw - 480px));
+      top: calc(50vh - -53px);
+      width: 315px;
+      height: 315px;
+
+      z-index: -1;
+    }
+    &__ellipse_bg-2 {
+      top: calc(50vh - 211px);
+      right: calc(360px + (50vw - 480px));
+      width: 60px;
+      height: 60px;
+      z-index: -1;
+    }
+
+    .sign-in {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      &__cont {
+        width: 80%;
+      }
+      &__overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        border: 2px solid;
+        border-image-source: linear-gradient(
+          157.19deg,
+          rgba(255, 255, 255, 0.4) 0%,
+          rgba(255, 255, 255, 0) 100.04%
+        );
+
+        opacity: 0.3;
+        z-index: -1;
+      }
+      &__or {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 18px;
+        margin-bottom: 18px;
+      }
+    }
+    .circle-container {
+      display: block;
+      animation: circle-container_tablet 0.8s cubic-bezier(0.25, 1, 0.5, 1) both;
+      &__fill {
+        animation: vibrate-3 12s cubic-bezier(0.45, 0.05, 0.55, 0.95) 0.8s
+          infinite alternate both;
+      }
+      &__ring {
+        animation: vibrate-3 13s cubic-bezier(0.45, 0.05, 0.55, 0.95) 0.8s
+          infinite alternate both;
+      }
+    }
+  }
+  @include min-media(tablet2x) {
+    .brand-logo {
+      left: 50px;
+      z-index: 2;
+      animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) 2s 1
+        normal both;
+      &__text {
+        @include BrandTextStyle(light, small);
+      }
+    }
+    .sign-up {
+      display: flex;
+    }
+    &__sign-in {
+      height: 500px;
+    }
+    .sign-in {
+      position: absolute;
+      right: 0;
+      width: 50vw;
+      border: none;
+      background: none;
+      border-radius: initial;
+      box-shadow: initial;
+      backdrop-filter: none;
+
+      &__cont {
+        width: 460px;
+        padding-top: 55px;
+        padding-left: 40px;
+        border-right-style: solid;
+        border-right-width: 0px;
+        padding-right: 40px;
+        border-left-style: solid;
+        border-left-width: 0px;
+        padding-bottom: 55px;
+        background: linear-gradient(
+          164.21deg,
+          rgba(255, 255, 255, 0.4) 3.03%,
+          rgba(255, 255, 255, 0.1) 95.86%
+        );
+        border-radius: 30px;
+        box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(10px);
+      }
+      &__overlay {
+        display: none;
+        width: 415px;
+        padding-top: 55px;
+        padding-left: 40px;
+      }
+      &__ellipse-bg-1 {
+        display: block;
+        bottom: -150px;
+        left: calc(25vw - 20px);
+        z-index: -1;
+      }
+      &__ellipse-bg-2 {
+        display: block;
+        top: 73px;
+        left: calc(25vw - -75px);
+        z-index: -1;
+      }
+    }
+    &__ellipse_bg-1 {
+      display: none;
+    }
+    &__ellipse_bg-2 {
+      display: none;
+    }
+    .circle-container {
+      top: -84px;
+      left: -167px;
+      z-index: -1;
+      animation: circle-container_tablet2x;
+      animation-delay: 0.5s;
+      animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+      animation-duration: 2s;
+      animation-fill-mode: both;
+      &__fill {
+        width: calc(50vh + 355px);
+        height: calc(50vh + 355px);
+        animation: vibrate-3 10s cubic-bezier(0.45, 0.05, 0.55, 0.95) 2s
+          infinite alternate both;
+      }
+      &__ring {
+        width: calc(50vh + 367px);
+        height: calc(50vh + 367px);
+        animation: vibrate-3 11s cubic-bezier(0.45, 0.05, 0.55, 0.95) 2s
+          infinite alternate both;
+      }
+      .log-in-images {
+        display: flex;
+        gap: 50px;
+        position: absolute;
+        top: calc(46vh - -28vh);
+        left: 315px;
+        animation: images-entrance-slide 2.5s cubic-bezier(0.17, 0.84, 0.44, 1)
+          3s 1 both;
+        &__image {
+          width: 140px;
+          height: 210px;
+          border-radius: 15px;
+          box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.25);
+        }
+      }
+      .ellipse {
+        display: block;
+        &__bg-1 {
+          animation: circle-entrance-slide 1.5s linear 2.5s 1 backwards,
+            vibrate-3 8s cubic-bezier(0.45, 0.05, 0.55, 0.95) 4s infinite
+              alternate;
+        }
+        &__bg-2 {
+          animation: circle-entrance-slide 1.5s linear 2.5s 1 backwards,
+            vibrate-3 7s cubic-bezier(0.45, 0.05, 0.55, 0.95) 4s infinite
+              alternate forwards;
+
+          // vibrate-2 14s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s infinite alternate both;
+        }
+      }
+      .log-in-context {
+        display: flex;
+        animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) 2s 1
+          normal both;
+      }
+    }
+  }
+  @include min-media(laptop) {
+    .brand-logo {
+      &__text {
+        @include BrandTextStyle(light, regular);
+      }
+      &__icon {
+        &_small {
+          display: none;
+        }
+        &_regular {
+          display: block;
+        }
+      }
+    }
+    .circle-container {
+      top: -142px;
+      left: -216px;
+      &__fill {
+        width: calc(35vh + 15vw + 362px);
+        height: calc(35vh + 15vw + 362px);
+      }
+      &__ring {
+        width: calc(35vh + 15vw + 384px);
+        height: calc(35vh + 15vw + 384px);
+      }
+      .log-in-context {
+        top: calc(36vh + 25px);
+        left: 340px;
+        &__header {
+          font: var(--Poppins_h2_SB);
+        }
+        &__body {
+          font: var(--Poppins_p2_M);
+        }
+      }
+      .ellipse {
+        &__bg-1 {
+          top: calc(36vh - 50px);
+          left: 500px;
+        }
+        &__bg-2 {
+          top: calc(36vh - 50px);
+          left: 566px;
+        }
+      }
+      .log-in-images {
+        top: calc(47vh + 14vw + 47px);
+      }
+    }
+  }
+  @include min-media(uhd) {
+    width: 1920px;
+    height: 914px;
+    border-radius: 30px;
+    background: linear-gradient(
+      164.21deg,
+      rgba(255, 255, 255, 0.4) 3.03%,
+      rgba(255, 255, 255, 0.1) 95.86%
+    );
+    border-radius: 30px;
+    box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    @at-root body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      background: #d8ffef;
+    }
+    .circle-container {
+      left: -198px;
+      &__fill {
+        width: 975.9px;
+        height: 975.9px;
+      }
+      &__ring {
+        width: 1000.9px;
+        height: 1000.9px;
+      }
+      .log-in-context {
+        top: 354.04px;
+        left: 325px;
+      }
+      .log-in-images {
+        top: 708.78px;
+        &__image {
+          width: 170px;
+          height: 255px;
+        }
+      }
+      .ellipse {
+        &__bg-1 {
+          top: 270.04px;
+        }
+        &__bg-2 {
+          top: 270.04px;
+        }
+      }
+    }
+    .sign-in {
+      width: 990px;
+      &__cont {
+        // background: none;
+        // border-radius: none;
+        // box-shadow: none;
+        // backdrop-filter: none;
+        // border: none;
+      }
+    }
+  }
+}
+.sign-in {
+  margin-bottom: 35px;
+  @include min-media(tablet) {
+    &__log-alt-cont {
+      gap: 15px;
+    }
+    &__button {
+      margin: 0 0 0 0;
+    }
+  }
+  @include min-media(tablet2x) {
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+}
+.sign-in-form {
+  @include min-media(tablet) {
+    &__sub-input {
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.sign-input {
+  @include min-media(tablet2x) {
+    &__input-cont {
+      input[type="email"],
+      input[type="email"] {
+        width: 100%;
+      }
+    }
+  }
+}

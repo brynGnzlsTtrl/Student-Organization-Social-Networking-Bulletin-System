@@ -1,0 +1,19 @@
+.brand-logo {
+  &__text {
+    @include BrandTextStyle(dark, small);
+    letter-spacing: 10px;
+  }
+  &__icon {
+    &_small {
+      @include BrandIconPosition(small);
+    }
+    &_regular {
+      display: none;
+      @include BrandIconPosition(regular);
+    }
+    &_large {
+      display: none;
+      @include BrandIconPosition(large);
+    }
+  }
+}

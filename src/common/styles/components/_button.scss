@@ -1,0 +1,15 @@
+.button {
+    width: 120px;
+    height: 40.05px;
+    border-radius: 30px;
+    font: var(--Poppins_p4_SB);
+    &_bg-1 {
+        background: var(--bg_2);  
+        color: var(--fg_1);
+    }
+    &_bg-2 {
+        background: var(--bg_2);  
+        color: var(--fg_1);
+    }
+    
+}

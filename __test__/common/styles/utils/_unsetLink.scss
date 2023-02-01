@@ -1,0 +1,9 @@
+@mixin unset-link {
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: initial;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,69 @@
+.log-in-form {
+  &__brand-logo {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+  }
+  .circle-container {
+    display: none;
+    top: -57px;
+    left: -117px;
+    z-index: -1;
+    &__fill {
+      position: absolute;
+      width: calc(58px + 40vw);
+      height: calc(58px + 40vw);
+    }
+    &__ring {
+      position: relative;
+      width: calc(68px + 40vw);
+      height: calc(68px + 40vw);
+      z-index: -1;
+    }
+    &__log-in-images {
+      display: none;
+    }
+    &__log-in-context {
+      display: none;
+    }
+    .ellipse {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      &__bg-1 {
+        top: calc(36vh - 75px);
+        left: 436px;
+        width: 18px;
+        height: 18px;
+      }
+      &__bg-2 {
+        top: calc(36vh - 78px);
+        left: 485px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .log-in-context {
+      display: none;
+      flex-direction: column;
+      gap: 35px;
+      position: absolute;
+      top: calc(35vh - -1vh);
+      left: 250px;
+      z-index: 2;
+
+      width: 430px;
+      height: 212px;
+      &__header {
+        font: normal 600 28px/125% Poppins, Arial, Helvetica, "sans-serif";
+        letter-spacing: 0.09em;
+        color: var(--fg_1);
+      }
+      &__body {
+        font: normal 500 16px/120% Poppins, Arial, Helvetica, "sans-serif";
+        letter-spacing: 0.15em;
+        color: var(--fg_2);
+      }
+    }
+  }
+}

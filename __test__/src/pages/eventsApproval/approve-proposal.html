@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='69.283' height='40' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(45, 29%, 95%, 1)'/><path d='M46.189-20L57.736 0M46.189 20l11.547 20m-46.189 0l11.547 20M11.547 0l11.547 20m40.415 30H40.415M28.868 30H5.774m23.094-40H5.774m57.735 20H40.415m0 20L28.868 50m11.547-60L28.868 10m46.188 0L63.509 30M5.774 10L-5.773 30m75.056 10H46.189L34.64 20 46.19 0h23.094C73.13 6.667 76.98 13.333 80.83 20zM57.736 60H34.64L23.094 40l11.547-20h23.095c3.848 6.667 7.698 13.333 11.547 20L57.736 60zm0-40H34.64L23.094 0l11.547-20h23.095L69.283 0c-3.87 6.7-8.118 14.06-11.547 20zM34.64 60H11.547L0 40l11.547-20h23.094L46.19 40 34.64 60zm0-40H11.547L0 0l11.547-20h23.094L46.19 0 34.64 20zM23.094 40H0l-5.773-10-5.774-10L0 0h23.094l11.547 20-11.547 20z'  stroke-width='1' stroke='hsla(198, 16%, 72%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+      }
+      .table-cont {
+        padding: 50px 35px;
+        background: linear-gradient(164.21deg, rgba(255, 255, 255, 0.4) 3.03%,rgba(255, 255, 255, 0.1) 95.86%);
+        box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(4px);
+        border-radius: 15px;
+      }
+      table { border-collapse: collapse; }
+      th { padding: 8px 13px; background: #acbcc3; }
+      td { padding: 5px 10px; }
+      tr:nth-child(even) { background-color: #dddddd; }
+      table, td,
+      th { border: 2px solid black; }
+
+      .acceptm-btn {
+      background: #395596;
+      border-radius: 4px;
+      padding: 6px 6px;
+      font-size: medium;
+      border: 2px solid transparent;
+      color: white;
+      }
+
+      .rejectm-btn {
+      background: #395596;
+      border-radius: 4px;
+      padding: 6px 6px;
+      font-size: medium;
+      border: 2px solid transparent;
+      color: white;
+      }
+
+      .acceptm-btn:hover {
+        background-color: green;
+        color: white;
+        border-radius: 4px;
+      }
+
+      .rejectm-btn:hover {
+        background-color: red;
+        color: white;
+        border-radius: 4px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+    <div class="table-cont">
+      <table>
+        <thead>
+          <tr>
+            <th>Event Title</th>
+            <th>What?</th>
+            <th>Where?</th>
+            <th>When?</th>
+            <th>Comments</th>
+            <th>Accept/Reject</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Outreach Program</td>
+            <td>It aims to provide school supplies to elementary students in need</td>
+            <td>Balanga City</td>
+            <td>January, 31, 2023</td>
+            <td><textarea name="Comments-Membership" id="" cols="30" rows="10"></textarea></td>
+            <td>
+              <button class="acceptm-btn">Accept</button>
+              <button class="rejectm-btn">Reject</button>
+            </td>
+          </tr>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

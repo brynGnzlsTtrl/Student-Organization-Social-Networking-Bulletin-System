@@ -1,0 +1,38 @@
+
+// Pallete Theme
+$background_1: #8AFFCF;
+$background_2: #9B4CFF;
+$background_3: #28272F;
+$background_4: #ffffff;
+
+
+$foreground_1: #ffffff;
+$foreground_2: #9AA0A6;
+$foreground_3: #6B737A;
+$foreground_4: #474D52;
+$foreground_5: #28272F;
+
+
+:root {
+    --bg_1: #{$background_1};
+    --bg_2: #{$background_2};
+    --bg_3: #{$background_3};
+    --bg_4: #{$background_4};
+    
+    --fg_1: #{$foreground_1};
+    --fg_2: #{$foreground_2};
+    --fg_3: #{$foreground_3};
+    --fg_4: #{$foreground_4};
+    --fg_5: #{$foreground_5};
+
+    --Poppins_h2_SB: normal 600 32px/125% Poppins, Arial, Helvetica, sans-serif;
+    --Poppins_h3_SB: normal 600 26px Poppins, Arial, Helvetica, sans-serif; 
+ 
+    
+
+    --Poppins_p2_M: normal 500 20px/120% Poppins, Arial, Helvetica, sans-serif;
+    --Poppins_p3_R: normal 400 16px Poppins, Arial, Helvetica, sans-serif;
+    --Poppins_p4_SB: normal 600 14px Poppins, Arial, Helvetica, sans-serif;
+    
+}
+

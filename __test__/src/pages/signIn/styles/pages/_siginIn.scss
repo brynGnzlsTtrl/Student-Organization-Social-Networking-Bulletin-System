@@ -1,0 +1,62 @@
+.log-in-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  &__sign-in {
+    justify-self: center;
+  }
+  &__brand-logo {
+    position: absolute;
+    top: 40px;
+  }
+  .ellipse {
+    position: absolute;
+  }
+  &__ellipse_bg-1 {
+    top: calc(-25px - 3.125vw);
+    right: -65px;
+    width: calc(50px + 30vw);
+    height: calc(50px + 30vw);
+  }
+  &__ellipse_bg-2 {
+    top: calc(34px + 30vw);
+    right: -7px;
+    width: 20px;
+    height: 20px;
+  }
+  .sign-up {
+    display: none;
+    direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    position: absolute;
+    right: 50px;
+    top: 35px;
+    &__context {
+      font: var(--Poppins_p4_SB);
+      color: var(--fg_4);
+    }
+  }
+}
+.dialog-box {
+  display: none;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 10px;
+  width: 353px;
+  margin: auto;
+  font: var(--Poppins_p4_SB);
+  text-align: center;
+  padding: 15px 50px;
+  border-radius: 10%;
+}
+
